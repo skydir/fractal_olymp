@@ -1,0 +1,215 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Фрактал: Интернет-олимпиады</title>
+  <style>
+#centeredmenu {
+   float:right;
+   width:100%;
+   border-bottom:4px solid #000080;
+   overflow:hidden;
+   position:relative;
+   background: #F7FDFD;
+}
+#centeredmenu ul {
+   clear:right;
+   float:right;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:0%;
+   text-align:center;
+}
+#centeredmenu ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:0%;
+}
+#centeredmenu ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background:#6495ED;
+   color:#fff;
+   text-decoration:none;
+   line-height:1.3em;
+   font-weight:bold;
+}
+#centeredmenu ul li a:hover {
+   background:#369;
+   color:#fff;
+}
+#centeredmenu ul li a.active,
+#centeredmenu ul li a.active:hover {
+   color:#fff;
+   background:#000080;
+   font-weight:bold;
+}
+.StandardTable
+{
+	//border-collapse: collapse;
+	border-radius: 10px;
+	border-spacing: 0;
+	border: 1px solid #6495ED;
+}
+.StandardTable tbody 
+{
+    background-color: #E9F2FB;
+}
+.StandardTable th
+{
+    background: #000080; 
+	color: white;
+	font-weight:bold;
+	font-size: 13pt;
+	border: 1px solid #6495ED;
+}
+.StandardTable th:first-child 
+{
+	border-top-left-radius: 10px;
+}
+.StandardTable th:last-child 
+{
+	border-top-right-radius: 10px;
+}
+.StandardTable tr:last-child td:first-child 
+{
+	border-radius: 0 0 0 10px;
+}
+.StandardTable tr:last-child td:last-child 
+{
+	border-radius: 0 0 10px 0;
+}
+.StandardTable tbody tr td
+{
+	padding: 10px 30px;
+	width: 100%;
+	font-size: 13pt;
+	word-wrap: break-word;
+	border: 1px solid #6495ED;
+}
+#footer 
+{
+    position: fixed; /* Фиксированное положение */
+    left: 0; 
+	bottom: 0; 
+	padding: 5px; /* Поля вокруг текста */
+    background: #6495ED; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */  
+}
+.bd
+{
+	background: #F7FDFD;
+	margin-left: 15%;
+	position: absolute;
+	width: 70%;
+}
+#nadpis
+{
+	color: #000080;
+	font-style: italic; /* Курсивное начертание */
+	font-weight: 600;
+	font-size: 25pt;
+}
+.combobox
+{
+	word-wrap: break-word;
+	font-size: 13pt;
+	background: #F7FDFD;//#E9F2FB;
+	border-color: #6495ED;
+	border-style: inset;
+}
+.text_near_knopka
+{
+	color: #000080;
+	font-weight:bold;
+	word-wrap: break-word;
+	font-size: 15pt;
+	margin-bottom: 10px;
+}
+.knopka
+{
+	border-radius: 5px;
+	border-style: inset;
+	background: #E9F2FB;
+    color: #000080;
+	border-color: #6495ED;
+	border-width: 1px;
+	font-size: 13pt;
+	font-weight:bold;
+	margin-bottom: 20px;
+}
+.text_near_knopka2
+{
+	color: #000080;
+	font-weight:bold;
+	word-wrap: break-word;
+	font-size: 23pt;
+	margin-bottom: 10px;
+	margin-left: 15%;
+}
+.knopka2
+{
+	border-radius: 5px;
+	border-style: inset;
+	background: #F7FDFD;//#E9F2FB;
+    color: #000080;
+	border-color: #6495ED;
+	border-width: 1px;
+	font-size: 23pt;
+	font-weight:bold;
+	margin-bottom: 20px;
+	margin-left: 35%;
+	width: 30%;
+}
+.forma_vvoda
+{
+	
+	border-radius: 35px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #6495ED;
+	background: #E9F2FB;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+.pole_vvoda
+{
+	color: #000080;
+	font-weight:bold;
+	word-wrap: break-word;
+	font-size: 23pt;
+	margin-left: 15%;
+	width: 70%;
+}
+</style>
+</head>
+<body class="bd">
+	<table>	
+		<tr>
+			<td><div><img src="5.png"/></div></td> 
+			<td><div id="nadpis">&nbsp &nbsp Интернет-олимпиады кружка "Фрактал"</div></td>
+		</tr>
+	</table>
+	<div id="centeredmenu">
+	</div>
+	<div class="forma_vvoda">
+		<form  method="post" action="login.php">
+			<p class="text_near_knopka2">Логин:</p>
+			<input class="pole_vvoda"  type="text" name="Login" />
+			<p class="text_near_knopka2">Пароль:</p>
+			<input class="pole_vvoda" type="password" name="password" />
+			<p><input class="knopka2" type="submit" value="Войти" /></p>
+		</form>
+	</div>
+	<div id="footer" align="center">Кружки олимпиадной математики "Фрактал" &nbsp &nbsp 985-40-37 &nbsp &nbsp FRACTALCLUB@GMAIL.COM</div>
+</body>
+</html>
